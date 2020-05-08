@@ -3,7 +3,7 @@ import Vapor
 
 func routes(_ app: Application) throws {
     app.get { req in
-        return "It works!"
+        return "It works from a container!"
     }
 
     app.get("hello") { req -> String in

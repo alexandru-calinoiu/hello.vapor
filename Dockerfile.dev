@@ -1,0 +1,5 @@
+FROM swift:5.2-bionic
+
+RUN apt-get -qq update && apt-get -q -y install \
+  tzdata \
+  && rm -r /var/lib/apt/lists/*
